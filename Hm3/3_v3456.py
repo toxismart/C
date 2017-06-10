@@ -2,8 +2,8 @@ from pgup import pgu
 import sys
 op = pgu(input('First Name: '),input('Last Name: '), input('Tel: '), input('ID: '))
 class idp:
-    def id_n(self, id):
-        self.
+    def id_n(self, uid):
+        self.uid
 
 def main():
     print(op.uid)
