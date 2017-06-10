@@ -4,15 +4,13 @@
 #include<locale.h>
 #include<time.h>
 #define son 20
-
 struct data{
   int uid;
   char *firstname;
   char *lastname;
   int p_n[11];
 };
-void out(struct data *in)
-{
+void out(struct data *in){
   printf("UID: %d\n", in->uid);
   printf("name: %s\n", in->firstname);
   printf("surname: %s\n", in->lastname);
@@ -21,8 +19,7 @@ void out(struct data *in)
   for(;ch<11;ch++)
       printf("%d", in->p_n[ch]);
 }
-void in(struct data *in)
-{
+void in(struct data *in){
     printf("Enter UID\n");
     scanf("%d", &in->uid);
     getchar();
@@ -34,8 +31,7 @@ void in(struct data *in)
     for(;ch<11;ch++)
       scanf("%d", &in -> p_n[ch]);
 }
-int main()
-{
+int main(){
   setlocale(LC_ALL, "");
   srand(time(NULL));
   struct data qp;
