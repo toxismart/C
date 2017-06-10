@@ -1,15 +1,14 @@
 #include <stdio.h>
-void allin(int ch)
-{
+#include <stdlib.h>
+#include <time.h>
+void allin(int ch){
 int i=0;
-for(i<=ch ; i=i+1)
-    {
+for(; i<=ch; i=i+1){
     printf("%d ", i);
     }
 }
-int main()
-{
+int main(){
     allin(17);
-    getch();
+    getchar();
     return 0;
 }

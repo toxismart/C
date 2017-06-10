@@ -1,20 +1,18 @@
 #include <stdio.h>
-int main()
-{
+#include <stdlib.h>
+#include <time.h>
+int main(){
     int tmp=0,m[5],i,lim=0;
-    while(1)
-    {
+    while(1){
         scanf("%d", &tmp);
-        if(tmp<50)
-        {
+        if(tmp<50){
             m[lim] = tmp;
             lim++;
         }
-        if(lim==5)
-        {
+        if(lim==5){
             break;
         }
     }
-    getch();
-    return ;
+    getchar();
+    return 0;
 }

@@ -1,18 +1,17 @@
 #include <stdio.h>
-void infile(int *masip)
-{
+#include <stdlib.h>
+#include <time.h>
+void infile(int *mas){
     FILE *masip;
-    msin = fopen("masip.txt","w");
+    masip = fopen("masip.txt","w");
     int ch=0;
     for(;ch<10;ch++)
         fprintf(masip,"%d",mas[ch]);
     fclose(masip);
 }
-int main()
-{
+int main(){
     int mas[3] = {2,4,8};
     infile(mas);
-    printf("working");
-    getch();
-    return;
+    getchar();
+    return 0;
 }

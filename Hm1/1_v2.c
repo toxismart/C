@@ -1,6 +1,5 @@
 #include<stdio.h>
-int main()
-{
+int main(){
     char fs_string[255],sc_string[255];
     gets(fs_string);
     gets(sc_string);
@@ -9,6 +8,6 @@ int main()
     fprintf(openstrings, "%s", fs_string);
     fprintf(openstrings, "\n%s", sc_string);
     fclose(openstrings);
-    getch();
+    getchar();
     return 0;
 }
