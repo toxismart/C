@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 int main(){
-    int tmp=0,m[5],i,lim=0;
+    int tmp=0,mas[5],ch,lim=0;
     while(1){
         scanf("%d", &tmp);
         if(tmp<50){
-            m[lim] = tmp;
+            mas[lim] = tmp;
             lim++;
         }
         if(lim==5){
